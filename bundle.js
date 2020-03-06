@@ -2052,8 +2052,9 @@ function trackerTable() {
 
         for (let c = 0; c < numRows; c++) {
             
-            cssClass = 'tracker-cell';
-            if(c%4==0)cssClass = 'tracker-cell tracker-cell-painted';
+            enable_paint_column_cell=false;
+            if(c%4==0 && cssClass == 'tracker-cell' ) enable_paint_column_cell=true;
+            if (enable_paint_column_cell) cssClass = 'tracker-cell tracker-cell-painted';
 
             //console.log("bundle.js c="+c + "   cssClass="+cssClass);
             str += `<td class="${cssClass}" data-row-id="${rowID}" data-col-id="${c}">`;
@@ -2061,6 +2062,9 @@ function trackerTable() {
                 str += c + 1;
             }
             str += `</td>`;
+            if(c%4==0 && cssClass == 'tracker-cell' )cssClass = 'tracker-cell tracker-cell-painted';
+            if (enable_paint_column_cell) cssClass = 'tracker-cell';
+
         }
         return str;
     };

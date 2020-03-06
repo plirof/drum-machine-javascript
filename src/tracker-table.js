@@ -46,8 +46,8 @@ function trackerTable() {
         }
 
         for (let c = 0; c < numRows; c++) {
-            console.log("c="+c);
-            str += `<td bgcolor="#AAAAAA" class="${cssClass}" data-row-id="${rowID}" data-col-id="${c}">`;
+            
+            str += `<td class="${cssClass}" data-row-id="${rowID}" data-col-id="${c}">`;
             if (data.header) {
                 str += c + 1;
             }
