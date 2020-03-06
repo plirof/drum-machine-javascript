@@ -50,6 +50,12 @@ a {
     /*background-color: pink;*/
 }
 
+.tracker-cell-painted {
+
+    background: lightgrey;
+
+}
+
 .tracker-enabled {
     background: orange;
 }

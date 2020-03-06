@@ -2051,6 +2051,11 @@ function trackerTable() {
         }
 
         for (let c = 0; c < numRows; c++) {
+            
+            cssClass = 'tracker-cell';
+            if(c%4==0)cssClass = 'tracker-cell tracker-cell-painted';
+
+            console.log("bundle.js c="+c + "   cssClass="+cssClass);
             str += `<td class="${cssClass}" data-row-id="${rowID}" data-col-id="${c}">`;
             if (data.header) {
                 str += c + 1;
