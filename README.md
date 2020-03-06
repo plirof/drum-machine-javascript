@@ -1,3 +1,5 @@
+## Offline Modification for teaching in an offline elementary class computer lab
+
 # drum-machine-javascript
 
 A simple drum-machine written in javascript

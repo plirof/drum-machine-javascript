@@ -483,7 +483,7 @@ module.exports = {
   ],
   settings: {
     sampleSet:
-      "https://raw.githubusercontent.com/oramics/sampled/master/DRUMS/pearl-master-studio/sampled.instrument.json",
+      "offline/raw.githubusercontent.com/oramics/sampled/master/DM/TR-909/Detroit/sampled.instrument.json",
     measureLength: 32,
     bpm: 460,
     detune: 0,

@@ -205,7 +205,7 @@ function scheduleAudioBeat(beat, triggerTime) {
     }
 }
 
-var dataUrl = "https://raw.githubusercontent.com/oramics/sampled/master/DM/CR-78/sampled.instrument.json";
+var dataUrl = "offline/raw.githubusercontent.com/oramics/sampled/master/DM/CR-78/sampled.instrument.json";
 var buffers;
 
 function initializeSampleSet(ctx, dataUrl, track) {
